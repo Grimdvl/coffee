@@ -1,0 +1,13 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 15rem;
+    width: 100%;
+    row-gap: 3rem;
+}
+
+.footer-link img {
+    filter: invert(100%);
+}

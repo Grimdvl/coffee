@@ -1,0 +1,45 @@
+.logo {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+
+.logo img {
+    height: 100%;
+    filter: invert(100%);
+}
+
+.logo::after {
+    content: '';
+    display: inline-block;
+    width: 6rem;
+    height: .1rem;
+    position: absolute;
+    right: 6rem;
+    top: 40%;
+    background-color: #000;
+}
+
+.logo::before {
+    content: '';
+    display: inline-block;
+    width: 6rem;
+    height: .1rem;
+    position: absolute;
+    left: 6rem;
+    top: 40%;
+    background-color: #000;
+}
+
+.main-logo img {
+    filter: invert(0%);
+}
+
+
+.main-logo::after {
+    background-color: #FFF;
+}
+
+.main-logo::before {
+    background-color: #FFF;
+}

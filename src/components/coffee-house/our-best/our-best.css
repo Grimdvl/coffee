@@ -1,0 +1,27 @@
+.our-best {
+    position: relative;
+    height: 49.5rem;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+
+.our-best-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.our-best-bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
