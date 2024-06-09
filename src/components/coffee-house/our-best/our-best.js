@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 import ourBestImg from '../../../assets/img/our-best.jpg';
 import CardsList from '../../cards-list/cards-list.js';
 import { Component } from 'react';
