@@ -1,6 +1,7 @@
 .our-best {
     position: relative;
-    height: 49.5rem;
+    min-height: 50rem;
+    width: 100%;
     display: flex;
     justify-content: start;
     flex-direction: column;

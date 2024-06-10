@@ -13,7 +13,7 @@ const CoffeeHouse = () => {
                 <h1 className='main-title'>Everything You Love About Coffee</h1>
                 <Logo className='main-logo'/>
                 <h2 className='main-subtitle subtitle'>We makes every day full of energy and taste <br /> Want to try our beans?</h2>
-                <button className='main-button'>More</button>
+                <button className='main-button'><a href="#about">More</a></button>
             </section>
             <About/>
             <OurBest/>
