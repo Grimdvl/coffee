@@ -7,7 +7,3 @@
     width: 100%;
     row-gap: 3rem;
 }
-
-.footer-link img {
-    filter: invert(100%);
-}

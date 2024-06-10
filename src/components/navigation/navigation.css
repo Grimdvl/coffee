@@ -1,0 +1,29 @@
+.navigation {
+    height: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+}
+
+.navigation-link {
+    margin-left: 3rem;
+    cursor: pointer;
+}
+
+.navigation-link:nth-child(2) {
+    margin-left: 0;
+}
+
+.footer-logo {
+    filter: invert(100%);
+}
+
+.navigation-link-item {
+    height: 100%;
+    width: 100%;
+    color: #FFF;
+}
+
+.footer-link {
+    color: #000;
+}

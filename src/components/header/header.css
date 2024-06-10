@@ -8,20 +8,3 @@
     left: 12%;
     z-index: 3;
 }
-
-.navigation {
-    height: 4rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: end;
-    column-gap: 3rem;
-}
-
-
-.navigation-link {
-    cursor: pointer;
-}
-
-.navigation-header img {
-    filter: invert(0%);
-}

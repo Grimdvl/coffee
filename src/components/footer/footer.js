@@ -1,16 +1,14 @@
-import './footer.css';
-import logo from '../../assets/icon/coffee-beans35.svg';
 import Logo from '../logo/logo.js';
+import Navigation from '../navigation/navigation.js';
 
+import './footer.css';
 
 const Footer = () => {
     return (
         <footer className="footer">
-            <ul className='navigation'>
-                <li className='navigation-link footer-link'><img src={logo} alt="logo" />Coffee house</li>
-                <li className='navigation-link'>Our coffee</li>
-                <li className='navigation-link'>For your pleasure</li>
-            </ul>
+            <Navigation
+                logoClass="footer-logo"
+                linkClass='footer-link'/>
             <Logo/>
         </footer>
     );

@@ -1,4 +1,4 @@
-import CardsListItem from '../cards-list-item/cards-list-item';
+import CardsListItem from './cards-list-item/cards-list-item.js';
 
 import './cards-list.css';
 
