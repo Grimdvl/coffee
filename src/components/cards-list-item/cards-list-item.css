@@ -8,12 +8,20 @@
     font-size: 1.4rem;
     line-height: 2.1rem;
     height: 24rem;
-    width: 100%;
+    width: 22rem;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 1rem;
+    padding: 1rem;
 }
 
 .cards-item-img {
-    height: 10rem;
-    width: 10rem;
+    height: 15rem;
+    width: 20rem;
+    border-radius: 1rem;
+}
+
+.cards-item-name,
+.cards-item-price,
+.cards-item-country {
+    align-self: flex-end;
 }
