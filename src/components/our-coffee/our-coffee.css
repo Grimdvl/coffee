@@ -1,4 +1,28 @@
 .our-coffee {
-    height: 100vh;
+    height: 100%;
     width: 100%;
+    position: relative;
+}
+
+/* .our-coffee-img {
+    position: relative;
+} */
+
+.our-coffee-img img {
+    position: absolute;
+    height: 26rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.our-coffee-img::after {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 26rem;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
 }
