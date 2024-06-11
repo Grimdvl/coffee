@@ -10,7 +10,7 @@ const CoffeeHouse = () => {
         <main className='coffee-house'>
             <section className='coffee-house-main'>
                 <img className='main-bg' src={bg} alt="main-bg" />
-                <h1 className='main-title'>Everything You Love About Coffee</h1>
+                <h1 className='title'>Everything You Love About Coffee</h1>
                 <Logo className='main-logo'/>
                 <h2 className='main-subtitle subtitle'>We makes every day full of energy and taste <br /> Want to try our beans?</h2>
                 <button className='main-button'><a href="#about">More</a></button>
