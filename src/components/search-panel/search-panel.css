@@ -1,0 +1,17 @@
+.our-coffee__filters--search {
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+.country--search {
+    background-color: white;
+    box-shadow: .5rem .5rem 2rem rgba(0, 0, 0, .3);
+    border-radius: .5rem;
+    height: 3rem;
+    padding: .5rem;
+}
+
+.country--search::placeholder {
+    text-align: center;
+}

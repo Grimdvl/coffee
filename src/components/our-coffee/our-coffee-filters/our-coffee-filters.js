@@ -1,5 +1,7 @@
 import CardsList from '../../cards-list/cards-list.js';
 import { Component } from 'react';
+import AppFilter from '../../app-filter/app-filter.js';
+import SearchPanel from '../../search-panel/search-panel.js';
 
 import './our-coffee-filters.css';
 import aromistico from '../../../assets/img/aromistico.jpg';
@@ -39,34 +41,23 @@ class OurCoffeeFilters extends Component {
         this.setState({term});
     }
 
-	filterCountry = (items, filter) => {
-		if (filter === 'all') {
-			return items;
-		}
-	
-		return items.filter(item => item.country === filter);
+	filterCountry = (items) => {
+		return items.filter(item => item.country);
 	}
 
-	onFilterSelect = (filter) => {
-        this.setState({filter});
+	onFilterSelect = () => {
+        this.setState();
     }
 
     render() {
-        const {data, term, filter} = this.state;
-		const visibleData = this.filterCountry(this.searchEmp(data, term), filter);
+        const {data, term} = this.state;
+		// const visibleData = this.searchEmp(data, term);
+		const visibleData = this.filterCountry(this.searchEmp(data, term));
         return (
             <section className='filters__wrapper'>
                 <div className='our-coffee__filters'>
-					<div className="our-coffee__filters--search">
-						<label htmlFor="search" className='about-text'>Lookiing for</label>
-						<input onUpdateSearch={this.onUpdateSearch} id="search" className='country--search' placeholder='start typing here...'></input>
-					</div>
-					<div id='sort' className="our-coffee__filters--sort">
-						<label onFilterSelect={this.onFilterSelect} htmlFor="sort" className='about-text'>Or filter</label>
-						<button className='country--button'>Brazil</button>
-						<button className='country--button'>Kenya</button>
-						<button className='country--button'>Columbia</button>
-					</div>
+				<SearchPanel onUpdateSearch={this.onUpdateSearch}/>
+				<AppFilter onFilterSelect={this.onFilterSelect}/>
 				</div>
                 <CardsList 
 					data={visibleData}
