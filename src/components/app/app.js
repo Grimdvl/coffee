@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Импортируем Routes
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from '../header/header.js';
 import CoffeeHouse from '../coffee-house/coffee-house.js';
 import OurCoffee from '../our-coffee/our-coffee.js';
@@ -18,7 +18,7 @@ class App extends Component {
                     </header>
                     <main>
                         <Routes>
-                            <Route path="/coffee-house" element={<CoffeeHouse />} />
+                            <Route path="/coffee" element={<CoffeeHouse />} />
                             <Route path="/our-coffee" element={<OurCoffee />} />
                             <Route path="/for-your-pleasure" element={<ForYourPleasure />} />
                         </Routes>
