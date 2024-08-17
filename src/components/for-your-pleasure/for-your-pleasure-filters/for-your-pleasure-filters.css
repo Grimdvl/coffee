@@ -1,0 +1,24 @@
+.filters__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.for-your-pleasure__filters {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10rem;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+}
+
+.for-your-pleasure__cards {
+    width: 70%;
+}
+
+.for-your-pleasure__cards-item {
+    height: 26rem;
+    background-color: white;
+    box-shadow: .5rem .5rem 2rem rgba(0, 0, 0, .3);
+    cursor: pointer;
+}

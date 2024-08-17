@@ -8,7 +8,7 @@ const Navigation = ({ logoClass = '', linkClass = '' }) => {
         <ul className='navigation'>
             <img className={logoClass} src={logo} alt="logo"/>
             <li className='navigation-link'>
-                <Link className={`navigation-link-item ${linkClass}`} to="/coffee">Coffee house</Link>
+                <Link className={`navigation-link-item ${linkClass}`} to="/coffee-house">Coffee house</Link>
             </li>
             <li className='navigation-link'>
                 <Link className={`navigation-link-item ${linkClass}`} to="/our-coffee">Our coffee</Link>

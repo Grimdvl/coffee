@@ -1,0 +1,41 @@
+.about__goods {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    justify-content: center;
+    column-gap: 5rem;
+}
+
+.about__goods-img {
+    height: 100%;
+    width: 100%;
+}
+
+.about__goods-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.about__goods-descr {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    row-gap: 2rem;
+}
+
+.divider {
+    position: absolute;
+    background-color: black;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: .1rem;
+    width: 24rem;
+}
+
+.second__divider {
+    bottom: -2rem;
+}

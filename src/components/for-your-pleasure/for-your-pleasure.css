@@ -1,4 +1,27 @@
-.for-your-pleasure {
-    height: 100vh;
+.for-your-pleasure-head {
+    height: 26rem;
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+}
+
+.for-your-pleasure-img img {
+    position: absolute;
+    height: 26rem;
     width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.for-your-pleasure-img::after {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 26rem;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
 }

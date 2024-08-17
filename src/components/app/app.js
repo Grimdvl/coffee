@@ -18,7 +18,7 @@ class App extends Component {
                     </header>
                     <main>
                         <Routes>
-                            <Route path="/coffee" element={<CoffeeHouse />} />
+                            <Route path="/coffee-house" element={<CoffeeHouse />} />
                             <Route path="/our-coffee" element={<OurCoffee />} />
                             <Route path="/for-your-pleasure" element={<ForYourPleasure />} />
                         </Routes>
