@@ -22,7 +22,7 @@ class OurCoffeeFilters extends Component {
 				{imgSrc: presto, name: 'Presto Coffee Beans 1 kg', country: 'Kenya', price: 6.99, id: 7},
 			],
 			term: '',
-			filter: 'all'
+			filter: null,
 		}
 		this.maxId = 7;
 	}
@@ -41,23 +41,27 @@ class OurCoffeeFilters extends Component {
         this.setState({term});
     }
 
-	filterCountry = (items) => {
-		return items.filter(item => item.country);
-	}
+    filterPost = (items, filter) => {
+        if (filter) {
+            return items.filter(item => item.country === filter);
+        }
+        return items;
+    }
 
-	onFilterSelect = () => {
-        this.setState();
+    onFilterSelect = (selectedFilter) => {
+        this.setState(({ filter }) => ({
+            filter: filter === selectedFilter ? null : selectedFilter
+        }));
     }
 
     render() {
-        const {data, term} = this.state;
-		// const visibleData = this.searchEmp(data, term);
-		const visibleData = this.filterCountry(this.searchEmp(data, term));
+        const {data, term, filter} = this.state;
+		const visibleData = this.filterPost(this.searchEmp(data, term), filter);
         return (
             <section className='filters__wrapper'>
                 <div className='our-coffee__filters'>
 				<SearchPanel onUpdateSearch={this.onUpdateSearch}/>
-				<AppFilter onFilterSelect={this.onFilterSelect}/>
+				<AppFilter filter={filter} onFilterSelect={this.onFilterSelect}/>
 				</div>
                 <CardsList 
 					data={visibleData}

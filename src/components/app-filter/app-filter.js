@@ -1,14 +1,9 @@
 import './app-filter.css';
 
 const AppFilter = (props) => {
-    const buttonsData = [
-        {name: 'all'},
-        {name: 'Brazil'},
-        {name: 'Kenya'},
-        {name: 'Columbia'},
-    ];
+    const buttonsData = ['Brazil', 'Kenya', 'Columbia'];
 
-    const buttons = buttonsData.map(({name}) => {
+    const buttons = buttonsData.map(name => {
         const active = props.filter === name;
         const clazz = active ? 'active' : '';
         return (
@@ -17,7 +12,7 @@ const AppFilter = (props) => {
                 type="button"
                 key={name}
                 onClick={() => props.onFilterSelect(name)}>
-            </button>
+            {name}</button>
         )
     });
 
