@@ -21,7 +21,7 @@ const CoffeeItem = () => {
         return <div>Coffee not found</div>;
     }
 
-    const { imgSrc, name, country, price } = coffee;
+    const { imgSrc, country, price } = coffee;
 
     return (
         <section className='about__it'>
