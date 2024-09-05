@@ -5,6 +5,8 @@ import OurCoffee from '../our-coffee/our-coffee.js';
 import CoffeeItem from '../our-coffee/our-coffee-item/our-coffee-item.js';
 import ForYourPleasure from '../for-your-pleasure/for-your-pleasure.js';
 import Footer from '../footer/footer.js';
+import AboutOurBeans from '../our-coffee/about-our-beans/about-our-beans.js';
+import OurCoffeeFilters from '../our-coffee/our-coffee-filters/our-coffee-filters.js';
 
 import './app.css';
 
@@ -17,8 +19,10 @@ const App = () => (
             <main>
                 <Routes>
                     <Route path="/coffee" element={<CoffeeHouse />} />
-                    <Route path="/our-coffee" element={<OurCoffee />} />
-                    <Route path="/our-coffee-item/:id" element={<CoffeeItem />} />
+                    <Route path="/our-coffee" element={<OurCoffee />}>
+                        <Route index element={<><AboutOurBeans /><OurCoffeeFilters /></>} />
+                        <Route path=":id" element={<CoffeeItem />} />
+                    </Route>
                     <Route path="/for-your-pleasure" element={<ForYourPleasure />} />
                 </Routes>
             </main>

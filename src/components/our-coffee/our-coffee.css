@@ -1,10 +1,15 @@
+.our-coffee {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
 .our-coffee-head {
     height: 26rem;
     position: relative;
     display: flex;
     align-items: start;
     justify-content: center;
-
 }
 
 .our-coffee-img img {

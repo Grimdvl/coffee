@@ -4,6 +4,7 @@
     grid-template-columns: repeat(auto-fit, 35rem);
     justify-content: center;
     column-gap: 5rem;
+    flex: 1;
 }
 
 .about__it-img {
