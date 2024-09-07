@@ -25,40 +25,13 @@ class ForYourPleasureFilters extends Component {
 		this.maxId = 7;
 	}
 
-	searchEmp = (items, term) => {
-        if (term.length === 0) {
-            return items;
-        }
-
-        return items.filter(item => {
-            return item.name.indexOf(term) > -1
-        })
-    }
-
-	onUpdateSearch = (term) => {
-        this.setState({term});
-    }
-
-	filterCountry = (items, filter) => {
-		if (filter === 'all') {
-			return items;
-		}
-	
-		return items.filter(item => item.country === filter);
-	}
-
-	onFilterSelect = (filter) => {
-        this.setState({filter});
-    }
-
     render() {
-        const {data, term, filter} = this.state;
-		const visibleData = this.filterCountry(this.searchEmp(data, term), filter);
+        const {data} = this.state;
         return (
             <section className='filters__wrapper'>
                 <CardsList 
-					data={visibleData}
-                	showCountry={true}
+					data={data}
+					showCountry={true}
 					className="for-your-pleasure__cards"
 					itemClassName="our-coffee__cards-item"/>
             </section>

@@ -28,7 +28,9 @@
 }
 
 .descr-country,
-.descr-price {
+.descr-price,
+.descr-text {
+    text-align: start;
     font-size: 1.4rem;
     line-height: 2.1rem;
 }
