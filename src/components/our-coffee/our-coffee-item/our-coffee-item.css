@@ -4,11 +4,10 @@
     grid-template-columns: repeat(auto-fit, 35rem);
     justify-content: center;
     column-gap: 5rem;
-    flex: 1;
 }
 
 .about__it-img {
-    height: 100%;
+    height: 35rem;
     width: 100%;
 }
 
@@ -25,6 +24,7 @@
     text-align: center;
     justify-content: center;
     row-gap: 2rem;
+    margin-top: 5rem;
 }
 
 .descr-country,
@@ -40,4 +40,10 @@
     font-size: 1.6rem;
     line-height: 2.4rem;
     font-weight: bold;
+}
+
+@media (max-width: 868px) {
+    .about__it-descr {
+        margin-top: 2rem;
+    }
 }

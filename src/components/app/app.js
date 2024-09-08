@@ -12,11 +12,11 @@ import './app.css';
 
 const App = () => (
     <Router>
-        <div>
+        {/* <div> */}
             <header className='header'>
                 <Header />
             </header>
-            <main>
+            {/* <main> */}
                 <Routes>
                     <Route path="/coffee" element={<CoffeeHouse />} />
                     <Route path="/our-coffee" element={<OurCoffee />}>
@@ -25,9 +25,9 @@ const App = () => (
                     </Route>
                     <Route path="/for-your-pleasure" element={<ForYourPleasure />} />
                 </Routes>
-            </main>
+            {/* </main> */}
             <Footer />
-        </div>
+        {/* </div> */}
     </Router>
 );
 
